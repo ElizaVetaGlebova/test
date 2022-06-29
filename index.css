@@ -5,6 +5,7 @@
     justify-content:space-around;
     align-items: flex-start;
     background-color: bisque;
+    border-radius: 10px 20px;
 }
 
 #pic {
