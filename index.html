@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>World Travelling</title>
+    <style>        
         p{
             color:rgb(12, 126, 126);
             text-align: center;
@@ -20,19 +21,19 @@
 
         @keyframes rotate {
             from { transform: rotate(0deg);}
-            to { transform: rotate(360deg) 2s }
+            to { transform: rotate(360deg);}
         }
 
         img{
             justify-content:flex-end;
             width: 100px;
             align-self: flex-start;
-            /* animation: rotate infinite; */
-            animation: rotation 1s infinite linear;
-                        
-        }        
 
+            animation: rotate 60s infinite linear;
+        }          
+        
     </style>
+    
 </head>
 <body>
     <p>Hello World!</p>
@@ -49,12 +50,20 @@
         <img src ="world_green.png" class="img_world_green">
         <img src ="world2.png" class="img_world2">
     </div>
+
     <h1>Attribute presence and value selectors</h1>
+
     <ul>        
         <li class="one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae laboriosam dicta quas quibusdam accusamus consectetur consequuntur! Nulla atque maxime quaerat dolore id beatae maiores amet!</li>
         <li class="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque esse laudantium delectus. Dolores, nihil. Esse assumenda, saepe architecto doloribus labore voluptate illo? Praesentium reiciendis fugiat ex laboriosam provident quo sed non, sunt rem.</li>
         <li class="three">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus odit quisquam neque dignissimos numquam, nihil, corporis perspiciatis consequuntur aut quibusdam natus? Eveniet odit commodi iure totam aut quisquam sequi?</li>
     </ul>
+    <form class="search-form search-form_theme_islands">
+        <input class="search-form__input">
+    
+        <button class="search-form__button">Найти</button>
+    </form>
+    
     
 
 </body>

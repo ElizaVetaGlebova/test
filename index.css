@@ -1,3 +1,4 @@
+
 .container{
     display: flex;
 	font-family: "Helvetica Neune";
@@ -37,6 +38,9 @@ ul > li {
     border-top: 2px solid red;
     border-bottom: 2px solid red;
 }  
+li::before {
+    content: '☐ ';
+  }
 
 div { 
     border: 1px solid green;
@@ -94,9 +98,9 @@ h1::first-line {
         opacity: 30%;        
     }
     
-    li[class="one"] {
+      /* {
         opacity: 50%;    
-    }  
+    }   */
 
     .container h1:first-child {
         font-size: 120%;
