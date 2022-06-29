@@ -5,27 +5,105 @@
     justify-content:space-around;
     align-items: flex-start;
     background-color: bisque;
-    border-radius: 10px 20px;
+    border-radius: 40px;
 }
 
 #pic {
-
     display: flex;
     width: 300px;
     height: 300px;
     flex-flow: row;
     justify-content:flex-start;
-    float: left;
+    /* float: left; */
 }
 
 #text{
     flex-direction: column;
     width: 550px;
     font-size: 0.8em;
-    
 }
 
 #bg_pics{
-
     background-color: rgba(93, 52, 132, 0.616);
+    border-radius: 90px;
+}
+
+li{
+    color:blueviolet;
+    padding: .5em;
+}
+
+ul > li {
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}  
+
+div { 
+    border: 1px solid green;
+    padding: 10px;
+    color:rgba(200, 40, 56, 0.564);
+}
+
+h1{
+    color: inherit;
+}
+
+h1::first-line { 
+    color:rgb(49, 96, 17);
+}
+@media print {
+    body { 
+    font-size: 10pt;
+    }
+
+    #bg_pics img{
+        max-width: 140px;
+    }
+
+    h1{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    p {
+        color: brown;
+    }
+    h1::first-line { 
+        color:blue;
+    }
+    .container{
+        flex-direction: row;
+        border-radius: 0px;
+    }
+
+    #bg_pics{
+        flex-direction: column;
+        border-radius: 0px;
+    }
+
+    #bg_pics img {
+        width: 100%;
+    }
+
+    .img_world{
+        order: 2;
+    }
+
+    .img_world2:hover{
+        opacity: 30%;        
+    }
+    
+    li[class="one"] {
+        opacity: 50%;    
+    }  
+
+    .container h1:first-child {
+        font-size: 120%;
+        font-weight:lighter;
+    }
+
+    p::after {
+        content: " This should show after a pharagraph."
+    } 
 }
