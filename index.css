@@ -52,6 +52,14 @@ h1{
     color: inherit;
 }
 
+p::first-letter {
+    font-size: 130%;
+}
+
+li:nth-child(2n) {
+    color: lime;
+}
+
 h1::first-line { 
     color:rgb(49, 96, 17);
 }
@@ -109,5 +117,6 @@ h1::first-line {
 
     p::after {
         content: " This should show after a pharagraph."
-    } 
+    }
+        
 }
