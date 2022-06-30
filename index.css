@@ -118,5 +118,8 @@ h1::first-line {
     p::after {
         content: " This should show after a pharagraph."
     }
-        
+      
+    body{
+        background:rgba(100, 183, 255, 0.245);
+    }  
 }

@@ -35,9 +35,33 @@
             justify-content:flex-end;
             width: 100px;
             align-self: flex-start;
+            object-fit: cover;
+            object-position: 50% 50%;
 
             animation: rotate 60s infinite linear;
-        }          
+        }  
+        
+        body{
+            background:rgba(100, 211, 26, 0.245);
+        }
+
+        span {
+            color: red; 
+        }
+
+        table {
+        border: 1px solid grey;
+        width: 100%;
+        }
+
+        th {
+        border: 1px solid rgb(53, 50, 50);
+        }
+
+        td {
+        border: 1px solid rgb(229, 209, 209);
+        color:red;
+        }
         
     </style>
     
@@ -60,13 +84,13 @@
 
     <h1>Attribute presence and value selectors</h1>
 
-    <ul>        
-        <li class="one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae laboriosam dicta quas quibusdam accusamus consectetur consequuntur! Nulla atque maxime quaerat dolore id beatae maiores amet!</li>
+    <ol>        
+        <li type ="A" class="one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae laboriosam dicta quas quibusdam accusamus consectetur consequuntur! Nulla atque maxime quaerat dolore id beatae maiores amet!</li>
         <br>
-        <li class="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque esse laudantium delectus. Dolores, nihil. Esse assumenda, saepe architecto doloribus labore voluptate illo? Praesentium reiciendis fugiat ex laboriosam provident quo sed non, sunt rem.</li>
+        <li type ="B" class="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque esse laudantium delectus. Dolores, nihil. Esse assumenda, saepe architecto doloribus labore voluptate illo? Praesentium reiciendis fugiat ex laboriosam provident quo sed non, sunt rem.</li>
         <br>
-        <li class="three">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus odit quisquam neque dignissimos numquam, nihil, corporis perspiciatis consequuntur aut quibusdam natus? Eveniet odit commodi iure totam aut quisquam sequi?</li>
-    </ul>
+        <li type ="C" class="three">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus odit quisquam neque dignissimos numquam, nihil, corporis perspiciatis consequuntur aut quibusdam natus? Eveniet odit commodi iure totam aut quisquam sequi?</li>
+    </ol>
 
     <form class="search-form search-form_theme_islands">
         <input class="search-form__input">
@@ -76,10 +100,56 @@
 
     <p>Е-mail: <a href="mailto: yelizaveta247glebova@gmail.com?body=Привет, подпишитесь на рассылку">yelizaveta247glebova@gmail.com</a> </p>
     <h2> Lorem ipsum dolor sit amet.</h2>    
-    <h3> Lorem ipsum dolor sit amet.</h3>
+    <h3> Lorem <span>ipsum dolor sit</span> amet.</h3>
     <h4> Lorem ipsum dolor sit amet.</h4>
     <h5> Lorem ipsum dolor sit amet.</h5>
     <h6> Lorem ipsum dolor sit amet.</h6>
+
+    <div class = "container" id="bg_pics">
+        <svg width="300" height="300">
+            <circle cx="150" cy="150" r="60" stroke="red" stroke-width="2" fill="blue" />
+        </svg>
+
+        <svg width="300" height="200">
+            <polygon points="100,10 40,198 190,78 10,78 160,198"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+        </svg>
+
+        <svg width="400" height="180">
+            <rect x="50" y="20" rx="20" ry="20" width="120" height="120"
+            style="fill:rgba(75, 177, 205, 0.525);stroke:black;stroke-width:5;opacity:0.5" />
+          </svg>
+    </div>
+
+    <table>
+        <tr>
+          <th>№ п/п</th>
+          <th>Наименование товара</th>
+           <th>Ед. изм.</th>
+           <th>Количество</th>
+           <th>Цена за ед. изм., руб.</th>
+           <th>Стоимость, руб.</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td>Томаты свежие</td><td>кг</td><td>15,20</td><td>69,00</td><td>1048,80</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Огурцы свежие</td><td>кг</td><td>2,50</td><td>48,00</td><td>120,00</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:right">ИТОГО:</td><td>20м<sup>2</sup>
+H<sub>2</sub>O</td>
+        </tr>
+      </table>
+
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+        </blockquote>
+
+    
+
 
 
 
