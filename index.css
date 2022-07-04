@@ -1,7 +1,7 @@
 
 .container{
     display: flex;
-	font-family: "Helvetica Neune";
+	font-family: "WINGDINGS";
     flex-flow: row wrap-reverse;
     justify-content:space-around;
     align-items: flex-start;
@@ -63,6 +63,7 @@ li:nth-child(2n) {
 h1::first-line { 
     color:rgb(49, 96, 17);
 }
+
 @media print {
     body { 
     font-size: 10pt;
