@@ -6,7 +6,7 @@
     flex-flow: row wrap-reverse;
     justify-content:space-around;
     align-items: flex-start;
-    background-color: bisque;
+    background-color: rgb(216, 172, 118);
     border-radius: 40px;
 }
 
@@ -36,8 +36,8 @@ li{
 }
 
 ul > li {
-    border-top: 2px solid red;
-    border-bottom: 2px solid red;
+    border-top: 2px solid rgb(83, 5, 5);
+    border-bottom: 2px solid rgb(239, 91, 91);
 }  
 li::before {
     content: '☐ ';
@@ -46,7 +46,7 @@ li::before {
 div { 
     border: 1px solid green;
     padding: 10px;
-    color:rgba(200, 40, 56, 0.564);
+    color:rgba(93, 5, 14, 0.564);
     /* text-overflow: ellipsis; */
     text-shadow: 5px 5px 5px rgba(211, 28, 28, 0.264);
     line-height: 10px; 
@@ -86,10 +86,10 @@ h1::first-line {
 
 @media (max-width: 800px) {
     p {
-        color: brown;
+        color: rgb(78, 26, 26);
     }
     h1::first-line { 
-        color:blue;
+        color:rgb(38, 38, 155);
     }
     .container{
         flex-direction: row;
