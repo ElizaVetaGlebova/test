@@ -2,6 +2,7 @@
 .container{
     display: flex;
 	font-family: "WINGDINGS";
+	/* font-family: "Copperplate"; */
     flex-flow: row wrap-reverse;
     justify-content:space-around;
     align-items: flex-start;
@@ -46,6 +47,11 @@ div {
     border: 1px solid green;
     padding: 10px;
     color:rgba(200, 40, 56, 0.564);
+    /* text-overflow: ellipsis; */
+    text-shadow: 5px 5px 5px rgba(211, 28, 28, 0.264);
+    line-height: 10px; 
+    /* white-space: nowrap; */
+    cursor: pointer;
 }
 
 h1{
@@ -92,7 +98,7 @@ h1::first-line {
 
     #bg_pics{
         flex-direction: column;
-        border-radius: 0px;
+        border-radius: 2px;
     }
 
     #bg_pics img {
@@ -117,7 +123,7 @@ h1::first-line {
     }
 
     p::after {
-        content: " This should show after a pharagraph."
+        content: " Words that are shown after a pharagraph."
     }
       
     body{
