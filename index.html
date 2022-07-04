@@ -14,9 +14,13 @@
             background-size: 100% 100%;
         } */
 
+        
         p{
             color:rgb(12, 126, 126);
-            text-align: center;            
+            text-align: center;
+            text-decoration: blink;    
+            text-shadow: 2cm blue;
+            box-shadow: 0 0 4px 2px #fff;
         }
 
         h1{
@@ -50,30 +54,51 @@
         }
 
         table {
-        border: 1px solid grey;
-        width: 100%;
+            border: 1px solid grey;
+            width: 100%;
         }
 
         th {
-        border: 1px solid rgb(53, 50, 50);
+            border: 1px solid rgb(53, 50, 50);
         }
 
         td {
-        border: 1px solid rgb(229, 209, 209);
-        color:red;
+            border: 1px solid rgb(229, 209, 209);
+            color:red;
+        }
+
+        figcaption{
+            text-align: center;            
         }
         
+        hr{
+            background: black;
+        }
+
+        footer{            
+	        font-family: "fantasy";  
+            background-color: rgba(204, 50, 171, 0.212);
+            border-radius: 40px;
+        }
+
+        textarea{
+            background-color: rgb(151, 149, 149);
+        }
     </style>
     
 </head>
 <body>
-    <p>Hello World!</p>
+    <p> Hello World!</p>
     <p>Geographic overview</p>
 
     <div class="container">
         <h1 id = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus quae neque, consectetur nostrum reprehenderit nam ad! Consectetur autem quasi, tenetur molestiae odit perferendis laudantium, atque, dignissimos maiores natus perspiciatis laborum? Temporibus adipisci reprehenderit enim quaerat aliquid sint pariatur ab, consequatur, maiores quo earum explicabo sit voluptates error laudantium. Explicabo earum ad cumque odio quibusdam assumenda exercitationem modi. Maiores et nesciunt autem corporis assumenda, sunt, aliquam dignissimos vitae quisquam magni molestiae voluptates reiciendis omnis aut, dicta quis magnam? Optio, ipsa voluptatem. Voluptatum dignissimos velit nulla nisi eos a vero minima totam voluptates iusto eum ipsum nesciunt et perferendis modi nam culpa harum fugiat laboriosam, cum officia in dolorem. Nobis recusandae hic blanditiis quae eveniet dolorum quaerat. Velit inventore enim iusto vitae ipsum sapiente, ducimus, cum veniam neque distinctio dignissimos ratione, consequatur sunt eaque quod quam maxime error ad eius nostrum. Minus reiciendis enim necessitatibus, optio voluptas similique modi perspiciatis fugit sunt omnis, doloribus iste iure dignissimos ipsum, possimus quis ducimus quam distinctio! Dolore odit natus nesciunt minima! Nam labore, suscipit iure architecto reiciendis doloremque qui ad iusto sunt modi aliquam fuga adipisci saepe, natus illo nulla? Obcaecati reiciendis at, ad tenetur delectus voluptate deleniti. Et tenetur libero natus odio explicabo rerum error a! Voluptatem cum dolorum hic tempora, perferendis quos dolorem eveniet, vel similique ea culpa, tenetur asperiores aperiam harum reiciendis laudantium et possimus natus mollitia. Dolorum rem inventore sunt nihil cumque reiciendis ex, dolorem numquam mollitia magnam veritatis dolores necessitatibus explicabo perspiciatis accusamus aut? Cupiditate quia nesciunt eos quasi! Consequuntur id asperiores neque inventore explicabo?</h1>
-
-        <img src ="world.png" id ="pic">    
+        <figure>
+            <img src ="world.png" id ="pic"> 
+            <br>
+            <figcaption>The World Planet</figcaption>  
+            <hr>
+        </figure> 
     </div>
 
     <div class = "container" id="bg_pics">
@@ -84,21 +109,32 @@
 
     <h1>Attribute presence and value selectors</h1>
 
-    <ol>        
-        <li type ="A" class="one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae laboriosam dicta quas quibusdam accusamus consectetur consequuntur! Nulla atque maxime quaerat dolore id beatae maiores amet!</li>
+    <ol type ="A">        
+        <li class="one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae laboriosam dicta quas quibusdam accusamus consectetur consequuntur! Nulla atque maxime quaerat dolore id beatae maiores amet!</li>
         <br>
-        <li type ="B" class="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque esse laudantium delectus. Dolores, nihil. Esse assumenda, saepe architecto doloribus labore voluptate illo? Praesentium reiciendis fugiat ex laboriosam provident quo sed non, sunt rem.</li>
+        <li class="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque esse laudantium delectus. Dolores, nihil. Esse assumenda, saepe architecto doloribus labore voluptate illo? Praesentium reiciendis fugiat ex laboriosam provident quo sed non, sunt rem.</li>
         <br>
-        <li type ="C" class="three">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus odit quisquam neque dignissimos numquam, nihil, corporis perspiciatis consequuntur aut quibusdam natus? Eveniet odit commodi iure totam aut quisquam sequi?</li>
+        <li class="three">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus odit quisquam neque dignissimos numquam, nihil, corporis perspiciatis consequuntur aut quibusdam natus? Eveniet odit commodi iure totam aut quisquam sequi?</li>
     </ol>
+
+    <dl>
+        <dt>
+          <dfn>
+            <abbr title="World-Wide Web">WWW</abbr>
+          </dfn>
+        </dt>
+        <dd>
+          The World-Wide Web (WWW) is a system of interlinked
+          hypertext documents accessed on the Internet.
+        </dd>
+    </dl>
 
     <form class="search-form search-form_theme_islands">
         <input class="search-form__input">
     
         <button class="search-form__button">Найти</button>
     </form>
-
-    <p>Е-mail: <a href="mailto: yelizaveta247glebova@gmail.com?body=Привет, подпишитесь на рассылку">yelizaveta247glebova@gmail.com</a> </p>
+    
     <h2> Lorem ipsum dolor sit amet.</h2>    
     <h3> Lorem <span>ipsum dolor sit</span> amet.</h3>
     <h4> Lorem ipsum dolor sit amet.</h4>
@@ -139,18 +175,54 @@
           <td>Огурцы свежие</td><td>кг</td><td>2,50</td><td>48,00</td><td>120,00</td>
         </tr>
         <tr>
-          <td colspan="5" style="text-align:right">ИТОГО:</td><td>20м<sup>2</sup>
-H<sub>2</sub>O</td>
+          <td colspan="5" style="text-align:right">ИТОГО:</td><td>20м<sup>2</sup>H<sub>2</sub>O</td>
         </tr>
-      </table>
+    </table>
 
-      <blockquote cite="http://www.worldwildlife.org/who/index.html">
-        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
-        </blockquote>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For <em>50 years</em>, WWF <i>has been protecting</i> the future of <del>nature</del> animals. 
+        The world's <strong>leading conservation organization</strong>, WWF works in <b>100</b> countries and 
+        is supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>
+    <details>Lorem ipsum dolor sit amet consectetur.</details>
+        
+    <p>Выберите любимого персонажа:</p>
+    <p>
+      <input list="character" />
+      <datalist id="character">
+        <option value="Чебурашка"></option>
+        <option value="Крокодил Гена"></option>
+        <option value="Шапокляк"></option>
+      </datalist>
+    </p>
 
-    
+    <p>
+        Для <mark>быстрого закрашивания выделенной области цветом
+        переднего плана</mark> используйте <u>комбинацию клавиш</u>
+        <kbd>Alt</kbd>+<kbd>Backspace</kbd> или
+        <kbd>Alt</kbd>+<kbd>Delete</kbd>. Для закрашивания
+        выделенной области фоновым цветом воспользуйтесь
+        комбинацией <kbd>Ctrl</kbd>+<kbd>Backspace</kbd> или
+        <kbd>Ctrl</kbd>+<kbd>Delete</kbd>.
+    </p>
+
+    <textarea rows="10" cols="45" name="text"></textarea> 
+
+    <meter value="2" min="0" max="10">2 out of 10</meter>
+    <meter value="0.6">60%</meter>
+
+    <progress value="63" max="100">
+    </progress>
+
+    <p contenteditable="true">This is an editable paragraph.</p>
 
 
+
+
+
+    <footer>
+    <p>Е-mail: <a href="mailto: yelizaveta247glebova@gmail.com?body=Привет, подпишитесь на рассылку">yelizaveta247glebova@gmail.com</a> </p>
+    </footer>
 
 
 </body>
